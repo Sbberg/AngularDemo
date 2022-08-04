@@ -1,0 +1,13 @@
+<h1>{{title}}</h1> <!--double {} are Angular's interpolation binding syntax. this binding property 
+                    makes available this app component's 'title' property in our HTML header tag-->
+
+<!-- <app-heroes></app-heroes> we are no longer using this element because we will replace it with the router outlet -->
+
+<nav>
+    <!--a 'routerLink' attribute has to be set to a string that matches an existing path-->
+    <a routerLink="/heroes"> Heroes </a>
+    <br>
+    <a routerLink="/dashboard"> Dashboard </a>
+</nav>
+<router-outlet></router-outlet> <!--tells the router where to display routed views-->
+<app-messages></app-messages>
